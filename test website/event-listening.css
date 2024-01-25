@@ -1,0 +1,19 @@
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+a {
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+a, button {
+    font-family: sans-serif;
+    color: black;
+    font-size: 18px;
+    margin: 20px;
+    padding: 15px;
+    text-decoration: none;
+}

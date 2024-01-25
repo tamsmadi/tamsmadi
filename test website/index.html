@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="button.css">
+    <script src="button.jsx"></script>
+    <script>
+        let balance=5
+        function increaseAccountBalance(amountToBeAdded){
+            balance+=amountToBeAdded
+        }
+        function multiplyAccountBalance(amountToBeMultiplied){
+            balance*=amountToBeMultiplied
+        }
+        function subtractAccountBalance(amountToBesubtracted){
+            balance-=amountToBesubtracted
+            if (balance<0){
+                alert('you can not have less than 0')
+            }
+        }
+        function divideAccountBalance(amountToBedivided){
+            balance/=amountToBedivided
+        }
+        function resetAccountBalance(){
+            balance-=balance
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="button">
+        <button onclick="alert('you have $'+balance)">show balance</button>
+        <button onclick="increaseAccountBalance(10)">add 10$</button>
+        <button onclick="increaseAccountBalance(1)">add 1$</button>
+        <button onclick="multiplyAccountBalance(3)">multiply funds</button>
+        <button onclick="subtractAccountBalance(10)">subtract 10$</button>
+        <button onclick="subtractAccountBalance(1)">subtract 1$</button>
+        <button onclick="divideAccountBalance(2)">half the balance</button>
+        <button onclick="resetAccountBalance()">reset the balance to 0$</button>
+    </div>
+</body>
+</html>
